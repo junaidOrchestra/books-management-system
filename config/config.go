@@ -28,6 +28,7 @@ var AppConfig Config
 func InitConfig() {
 	viper.SetConfigName("config")    // Filename without extension
 	viper.SetConfigType("yaml")      // File type
+	viper.AddConfigPath("./config")  // Directory where config.yaml is stored
 	viper.AddConfigPath("../config") // Directory where config.yaml is stored
 
 	if err := viper.ReadInConfig(); err != nil {
