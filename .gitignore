@@ -1,0 +1,7 @@
+/bin/
+/vendor/
+*.exe
+*.db
+
+docs/swagger.json
+docs/swagger.yaml
