@@ -12,8 +12,10 @@ services:
     environment:
       REDIS_HOST: redis:6379
       KAFKA_BROKER: kafka:9092
+      APP_ENV: docker
     networks:
       - app-network
+
 
   redis:
     image: redis:alpine
